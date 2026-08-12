@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <h2 align="Center">Student Registration Form</h2>
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            
+            <th colspan="2"> Registration From
+
+            </th>
+        </tr>
+        <tr>   
+        <td>Full Name</td>
+        <td ><input id="name" type="text"
+        placeholder="Enter Your Name">
+        </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td> <input id="email" type="email"
+                placeholder="Enter Your Email"></td>
+        </tr>
+        <tr>
+            <td>Phone Number</td>
+            <td><input id="phone" type="tel"
+            placeholder="Enter your Phone number"></td>
+
+        </tr>
+        <tr>
+            <td>Date Of Birth</td>
+            <td><input id="dob" type="date">
+    
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+            <section>
+
+                 <input type="radio"name="gender">
+            <label id="male">Male</label>
+        
+            <input type="radio"name="gender">
+            <label id="female">Female</label>
+            <input type="radio"name="gender">
+            <label id="other">Other</label>
+            </section>
+            </td>
+        </tr>
+        <tr>
+            <td>Skills</td>
+        <td>
+            <section>
+                 <input type="checkbox"name="skills">
+            <label id="Html">Html</label>
+        
+            <input type="checkbox"name="skills">
+            <label id="CSS">CSS</label>
+            <input type="checkbox"name="skills">
+            <label id="JavaScript">JavaScript</label>
+            </section>
+        </td>
+        </tr>
+
+        <tr>
+            <td>Course</td>
+            <td>
+                <select name="course" required>
+    <option value="" disabled selected hidden>Select Your Course</option>
+                    <option>B.Tech</option>
+                    <option>BBA</option>
+                    <option>Msc</option>
+                    <option>Bsc</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+    
+    <tr>
+    <td>Address</td>
+    <td>
+        <textarea id="address" name="address" placeholder="Address" rows="2" style="width: 215px; resize: vertical;"></textarea>
+    </td>
+</tr>  <tr>
+            <td>Upload Resume</td>
+            <td><input type="file" placeholder="Upload"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+        <input type="Register" value="Register">
+            <input type="reset" value="Reset">
+                </td>
+        </tr>
+
+    </table>
+</body>
+</html>
