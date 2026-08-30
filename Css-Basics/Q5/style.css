@@ -1,0 +1,150 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f8fafc;
+
+    color: #1e293b;
+}
+
+header {
+    text-align: center;
+
+    padding: 45px;
+
+    background-color: #0f172a;
+
+    color: white;
+}
+
+header h1 {
+    font-size: 2.8rem;
+
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #cbd5e1;
+}
+
+/* Pricing */
+.pricing {
+    display: flex;
+
+    gap: 25px;
+
+    justify-content: center;
+    align-items: stretch;
+
+    padding: 55px 7%;
+}
+
+.plan {
+    position: relative;
+
+    flex: 1;
+
+    max-width: 330px;
+
+    min-height: 420px;
+
+    padding: 35px 25px;
+
+    background-color: white;
+
+    border: 2px solid #cbd5e1;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s,
+                background-color 0.3s;
+}
+
+
+
+.popular {
+    border: 3px solid #2563eb;
+}
+
+.badge {
+    position: absolute;
+
+    top: -15px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background-color: #2563eb;
+
+    color: white;
+
+    padding: 7px 15px;
+
+    border-radius: 20px;
+
+    font-size: 0.75rem;
+
+    font-weight: bold;
+}
+
+.plan h2 {
+    font-size: 1.8rem;
+
+    margin-top: 10px;
+}
+
+.price {
+    font-size: 2.2rem;
+
+    font-weight: bold;
+
+    color: #2563eb;
+}
+
+.price span {
+    font-size: 0.9rem;
+
+    color: #64748b;
+}
+
+.plan ul {
+    text-align: left;
+
+    line-height: 2;
+
+    flex: 1;
+
+    color: #475569;
+}
+
+.plan a {
+    padding: 13px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+
+
+
