@@ -1,0 +1,57 @@
+/* Page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+/* Flexbox places cards in one row */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 70px 20px;
+}
+
+/* Common card styling */
+.card {
+    width: 250px;
+    padding: 30px;
+    background-color: white;
+    text-align: center;
+
+    /* Smooth hover animation */
+    transition: all 0.4s ease;
+}
+
+/* Different shadow styles */
+.shadow1 {
+    box-shadow: 5px 5px 10px gray;
+}
+
+.shadow2 {
+    box-shadow: 0 10px 25px gray;
+}
+
+.shadow3 {
+    box-shadow: 10px 10px 20px gray;
+}
+
+/* Text shadow for headings */
+.card h2 {
+    text-shadow: 2px 2px 4px lightgray;
+}
+
+/* Card lifts up on hover */
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 35px gray;
+}

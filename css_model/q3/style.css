@@ -1,0 +1,52 @@
+/* Remove default margin */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Fixed header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    z-index: 10;
+}
+
+/* Common section styling */
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* Linear gradient */
+.linear {
+    background: linear-gradient(120deg, #2196f3, #9c27b0);
+}
+
+/* Radial gradient */
+.radial {
+    background: radial-gradient(circle, #ff9800, #e91e63);
+    
+    /* Creates a parallax-like effect */
+    background-attachment: fixed;
+}
+
+/* Fixed footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

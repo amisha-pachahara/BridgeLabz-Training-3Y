@@ -1,0 +1,57 @@
+/* Attribute selector:
+   Selects input elements whose type is text */
+input[type="text"] {
+    border: 3px solid blue;
+    padding: 10px;
+}
+
+/* Attribute selector:
+   Selects links whose href starts with https */
+a[href^="https"] {
+    color: green;
+    font-weight: bold;
+}
+
+
+a:hover {
+    color: red;
+}
+
+
+input:focus {
+    background-color: #fff3cd;
+}
+
+
+.items li:nth-child(2) {
+    color: blue;
+    font-weight: bold;
+}
+
+
+.items li::before {
+    content: "✓ ";
+}
+
+
+.items li::after {
+    content: " !";
+}
+
+
+.parent > p {
+    background-color: lightblue;
+}
+
+.parent p {
+    padding: 8px;
+}
+
+
+h2 + .items {
+    border: 2px solid purple;
+}
+
+h2 ~ p {
+    font-style: italic;
+}

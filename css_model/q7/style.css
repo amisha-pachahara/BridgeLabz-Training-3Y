@@ -1,0 +1,82 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Article container */
+.article {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+}
+
+/* Heading styling */
+.article h2 {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Paragraph readability */
+.article p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    text-align: justify;
+}
+
+/* Different font family */
+.different-font {
+    font-family: Georgia, serif;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+/* Strong text */
+strong {
+    color: #c62828;
+}
+
+/* Emphasized text */
+em {
+    color: #1565c0;
+}
+
+/* Marked text */
+mark {
+    background-color: #ffeb3b;
+    color: #222;
+    padding: 2px 5px;
+}
+
+/* First letter styling */
+.intro::first-letter {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+/* First line styling */
+.intro::first-line {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}

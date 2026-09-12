@@ -1,0 +1,61 @@
+/* Page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Flexbox arranges boxes horizontally */
+.transform-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 100px 20px;
+}
+
+/* Keeps box and label together */
+.item {
+    text-align: center;
+}
+
+/* Common box styling */
+.box {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    border: 2px solid #333;
+
+    /* Required smooth transition */
+    transition: all 0.4s ease;
+}
+
+/* Rotate transformation */
+.rotate:hover {
+    transform: rotate(30deg);
+}
+
+/* Scale transformation */
+.scale:hover {
+    transform: scale(1.3);
+}
+
+/* Translate transformation */
+.translate:hover {
+    transform: translate(20px, -20px);
+}
+
+/* Skew transformation */
+.skew:hover {
+    transform: skew(20deg);
+}
