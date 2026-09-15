@@ -1,0 +1,47 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+}
+
+/* Four cards in a row */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+}
+
+/* Card */
+.card {
+    flex: 1 1 calc(25% - 20px);
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.card:hover {
+    background-color: #dcdcdc;
+}
+
+/* Tablet - 2 columns */
+@media (max-width: 900px) {
+    .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+

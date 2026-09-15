@@ -1,0 +1,92 @@
+
+/* Basic styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Heading */
+header {
+    text-align: center;
+    padding: 25px;
+}
+
+/* Profile cards using Flexbox */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+}
+
+/* Card */
+.profile-card {
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+
+    /* Page-load animation */
+    animation: fadeIn 1s ease-in;
+
+    transition: transform 0.3s ease;
+}
+
+/* Profile images */
+.profile-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+
+    transition: filter 0.4s ease;
+}
+
+/* Filters */
+.gray-image {
+    filter: grayscale(100%);
+}
+
+.sepia-image {
+    filter: sepia(100%);
+}
+
+/* Hover - remove filter and lift card */
+.profile-card:hover {
+    transform: translateY(-10px);
+}
+
+.profile-card:hover img {
+    filter: none;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Stack cards below 800px */
+@media (max-width: 800px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-card {
+        width: min(90%, 350px);
+    }
+}
