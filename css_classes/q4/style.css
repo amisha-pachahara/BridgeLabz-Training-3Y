@@ -1,0 +1,86 @@
+
+p {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Class selector
+   Styles elements having class="highlight" */
+.highlight {
+    background-color: #fff3cd;
+    padding: 10px;
+    border-left: 5px solid #ffc107;
+}
+
+/* ID selector
+   Styles the element having id="special" */
+#special {
+    background-color: #dbeafe;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Attribute selector
+   Selects links having an href attribute */
+a[href] {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Descendant combinator
+   Selects paragraphs inside .combinators */
+.combinators p {
+    padding: 8px;
+}
+
+/* Child combinator >
+   Selects only direct li children of ul */
+.combinators ul > li {
+    background-color: #e8f5e9;
+    margin: 5px;
+    padding: 8px;
+}
+
+/* Adjacent sibling +
+   Selects the paragraph immediately after another paragraph */
+.combinators p + p {
+    border-left: 5px solid #007bff;
+}
+
+/* General sibling ~
+   Selects all paragraphs that come after the first paragraph */
+.combinators p:first-of-type ~ p {
+    background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 25px;
+}
+
+/* Main content */
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
