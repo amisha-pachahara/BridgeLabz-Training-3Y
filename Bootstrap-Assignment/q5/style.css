@@ -1,0 +1,42 @@
+/* Custom Bootstrap theme variables */
+:root {
+    --bs-primary: #6f42c1;
+    --bs-font-sans-serif: 'Poppins', sans-serif;
+}
+
+/* Apply custom font */
+body {
+    font-family: var(--bs-font-sans-serif);
+}
+
+/* Custom blog header */
+.blog-header {
+    background: #6f42c1;
+}
+
+/* Custom footer */
+.blog-footer {
+    background: #34205c;
+}
+
+/* Blog cards */
+.blog-card {
+    border: none;
+    transition: 0.3s ease;
+}
+
+/* Card hover */
+.blog-card:hover {
+    transform: translateY(-6px);
+}
+
+/* Blog image */
+.blog-card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Custom badge */
+.theme-badge {
+    background: #6f42c1;
+}

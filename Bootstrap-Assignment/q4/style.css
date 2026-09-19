@@ -1,0 +1,12 @@
+/* Food image */
+.food-image {
+    width: 100%;
+    max-width: 850px;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* Menu table */
+.table {
+    vertical-align: middle;
+}

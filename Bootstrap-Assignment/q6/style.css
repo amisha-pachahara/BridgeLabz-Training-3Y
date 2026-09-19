@@ -1,0 +1,10 @@
+/* Summary section styled like a Bootstrap well */
+.summary-box {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+
+/* Alert spacing */
+.alert {
+    margin-bottom: 15px;
+}

@@ -1,0 +1,37 @@
+/* Hero section */
+.hero-section {
+    padding: 100px 0;
+    background: #f4f8ff;
+}
+
+/* Right side hero box */
+.hero-box {
+    padding: 70px 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Service cards */
+.service-box {
+    background: #f8f9fa;
+    border-radius: 10px;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+
+    .hero-box {
+        margin-top: 30px;
+    }
+}
