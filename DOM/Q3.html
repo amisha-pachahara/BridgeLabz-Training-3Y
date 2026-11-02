@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi Step Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 30px;
+        }
+
+        .step {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <div class="step active">
+        <label>Name:</label>
+        <input type="text" id="name">
+    </div>
+
+    <div class="step">
+        <label>Email:</label>
+        <input type="email" id="email">
+    </div>
+
+    <div class="step">
+        <label>Password:</label>
+        <input type="password" id="password">
+    </div>
+
+    <button id="backBtn">Back</button>
+    <button id="nextBtn">Next</button>
+
+    <div id="summary"></div>
+
+    <script src="Q3.js"></script>
+
+</body>
+</html>
