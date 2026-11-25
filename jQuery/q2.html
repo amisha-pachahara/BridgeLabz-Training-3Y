@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Highlight</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 25px; background: #f5f5f5; }
+        main { max-width: 900px; margin: auto; }
+        .product-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; }
+        .product { background: white; border: 1px solid #ddd; border-radius: 8px; padding: 15px; cursor: pointer; }
+        .product.selected { outline: 3px solid #2674d9; background: #eaf3ff; }
+        .product[data-discount] { border: 2px solid #e49a28; }
+        .details { display: none; color: #555; }
+        .favorite { border: 0; background: transparent; font-size: 22px; cursor: pointer; }
+        .favorite.selected { color: #d21f3c; }
+        .discount-label { color: #a45d00; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <header><h1>Product Highlight</h1></header>
+    <main>
+        <section class="product-list" aria-label="Products">
+            <article class="product" data-stock="in">
+                <h2>Wireless Mouse</h2><p>Price: ₹599</p>
+                <p class="details">Ergonomic wireless mouse with adjustable DPI.</p>
+                <button class="favorite" type="button" aria-label="Favorite Wireless Mouse">♡</button>
+            </article>
+            <article class="product" data-stock="in" data-discount="20">
+                <h2>Bluetooth Headphones</h2><p>Price: ₹1,499</p>
+                <p class="discount-label">20% Discount</p>
+                <p class="details">Comfortable headphones with clear sound.</p>
+                <button class="favorite" type="button" aria-label="Favorite Bluetooth Headphones">♡</button>
+            </article>
+            <article class="product" data-stock="out">
+                <h2>Smart Watch</h2><p>Price: ₹2,299</p>
+                <p class="details">Fitness tracking and phone notifications.</p>
+                <button class="favorite" type="button" aria-label="Favorite Smart Watch">♡</button>
+            </article>
+            <article class="product" data-stock="in" data-discount="10">
+                <h2>Laptop Backpack</h2><p>Price: ₹899</p>
+                <p class="discount-label">10% Discount</p>
+                <p class="details">Water-resistant backpack with laptop storage.</p>
+                <button class="favorite" type="button" aria-label="Favorite Laptop Backpack">♡</button>
+            </article>
+            <article class="product" data-stock="in">
+                <h2>USB Keyboard</h2><p>Price: ₹699</p>
+                <p class="details">Compact keyboard for everyday use.</p>
+                <button class="favorite" type="button" aria-label="Favorite USB Keyboard">♡</button>
+            </article>
+        </section>
+    </main>
+    <footer><p>Select a product to highlight it or use the heart to favorite it.</p></footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="q2.js"></script>
+</body>
+</html>

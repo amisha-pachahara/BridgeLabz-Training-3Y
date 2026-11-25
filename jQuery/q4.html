@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Offer Banners</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 25px; background: #f5f6fa; }
+        main { max-width: 850px; margin: auto; }
+        .banner { display: none; margin: 12px 0; padding: 22px; border-radius: 8px; color: #222; background: #ffe6a7; }
+        .banner:nth-of-type(even) { background: #d8edff; }
+        .controls button { margin: 5px; padding: 9px 12px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <header><h1>Special Offers</h1></header>
+    <main>
+        <section class="controls" aria-label="Banner controls">
+            <button id="hideBanners" type="button">Hide</button>
+            <button id="showBanners" type="button">Show</button>
+            <button id="slideUp" type="button">Slide Up</button>
+            <button id="slideDown" type="button">Slide Down</button>
+            <button id="fadeOut" type="button">Fade Out</button>
+            <button id="fadeIn" type="button">Fade In</button>
+        </section>
+        <section id="bannerContainer" aria-label="Current promotional banners">
+            <article class="banner"><h2>Offer 1: 20% Off</h2><p>Save on selected electronics today.</p></article>
+            <article class="banner"><h2>Offer 2: Free Delivery</h2><p>Enjoy free delivery on eligible orders.</p></article>
+            <article class="banner"><h2>Offer 3: Buy One Get One</h2><p>Special deal on selected accessories.</p></article>
+            <article class="banner"><h2>Offer 4: Student Discount</h2><p>Extra savings for students.</p></article>
+            <article class="banner"><h2>Offer 5: Weekend Sale</h2><p>Limited-time deals this weekend.</p></article>
+        </section>
+    </main>
+    <footer><p>Offers are subject to availability and terms.</p></footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="q4.js"></script>
+</body>
+</html>

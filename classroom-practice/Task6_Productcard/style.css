@@ -1,0 +1,14 @@
+.container{
+    background-color: rgb(210, 213, 213);
+    width: 350px; 
+    height:500
+}
+
+.shoe img{
+
+    width: 300px;
+    height: auto;
+}
+.shoe h2{
+    background-color: rgb(55, 95, 161);
+}

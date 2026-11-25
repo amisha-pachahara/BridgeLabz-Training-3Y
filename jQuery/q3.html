@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive FAQ</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 25px; background: #f6f7fb; }
+        main { max-width: 750px; margin: auto; }
+        .faq-item { background: white; border: 1px solid #ddd; margin: 12px 0; padding: 15px; border-radius: 7px; }
+        .question { cursor: pointer; margin: 0; }
+        .answer { display: none; padding-top: 10px; }
+        .answer input { padding: 8px; width: min(95%, 350px); }
+    </style>
+</head>
+<body>
+    <header><h1>Frequently Asked Questions</h1></header>
+    <main>
+        <section aria-label="Frequently asked questions">
+            <article class="faq-item">
+                <h2 class="question">1. How do I create an account?</h2>
+                <div class="answer"><p>Click the Sign Up button and complete the registration form.</p><label>Your name: <input type="text" placeholder="Enter your name"></label></div>
+            </article>
+            <article class="faq-item">
+                <h2 class="question">2. How can I reset my password?</h2>
+                <div class="answer"><p>Choose Forgot Password on the login page and follow the instructions.</p><label>Email: <input type="email" placeholder="Enter your email"></label></div>
+            </article>
+            <article class="faq-item">
+                <h2 class="question">3. How can I contact support?</h2>
+                <div class="answer"><p>You can contact our support team through the Contact Us page.</p><label>Message: <input type="text" placeholder="Type your message"></label></div>
+            </article>
+            <article class="faq-item">
+                <h2 class="question">4. Can I update my profile?</h2>
+                <div class="answer"><p>Yes, open your profile and select the Edit Profile option.</p><label>Username: <input type="text" placeholder="Enter username"></label></div>
+            </article>
+            <article class="faq-item">
+                <h2 class="question">5. Where can I see my orders?</h2>
+                <div class="answer"><p>All orders are available in the My Orders section of your account.</p><label>Order ID: <input type="text" placeholder="Enter order ID"></label></div>
+            </article>
+        </section>
+    </main>
+    <footer><p>Still need help? Contact our support team.</p></footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="q3.js"></script>
+</body>
+</html>
